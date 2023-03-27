@@ -72,7 +72,7 @@ ext {
     hamcrestVersion = "2.2"
     jacksonVersion = "2.14.2" // This Jackson is used in the tests.
     jupiterVersion = "5.9.2"
-    kafkaVersion = '2.6.3'
+    kafkaVersion = '7.3.2-ce'
     jettyVersion = "9.4.39.v20210325"
     junit4Version = "4.13.2"
     jsr305Version = "3.0.2"
