@@ -34,10 +34,10 @@ plugins {
     id "nebula.lint" version "18.0.3"
 
     // https://plugins.gradle.org/plugin/com.github.spotbugs
-    id "com.github.spotbugs" version "5.0.13"
+    id "com.github.spotbugs" version "5.0.14"
 
     // https://plugins.gradle.org/plugin/com.diffplug.gradle.spotless
-    id "com.diffplug.spotless" version "6.16.0"
+    id "com.diffplug.spotless" version "6.17.0"
 }
 
 repositories {
@@ -66,13 +66,13 @@ wrapper {
 ext {
     moduleName = "io.aiven.kafka.connect.http"
 
-    avroVersion = "1.9.2" // Version 1.9.2 brings Jackson 2.10.2 package for Avro
+    avroVersion = "1.11.1" // Version 1.9.2 brings Jackson 2.10.2 package for Avro
     confluentPlatformVersion = "6.0.2" // For compatibility tests use version 6.0.2 to match Kafka 2.6.
-                                       // NOTE: Confluent Platform v6.0.3 has a dependency mismatch issue.
+    // NOTE: Confluent Platform v6.0.3 has a dependency mismatch issue.
     hamcrestVersion = "2.2"
     jacksonVersion = "2.14.2" // This Jackson is used in the tests.
     jupiterVersion = "5.9.2"
-    kafkaVersion = '2.6.3'
+    kafkaVersion = '3.2.1'
     jettyVersion = "9.4.39.v20210325"
     junit4Version = "4.13.2"
     jsr305Version = "3.0.2"
@@ -278,5 +278,9 @@ spotbugsIntegrationTest {
 
 gradleLint.alwaysRun = false
 gradleLint {
-    rules  = ['all-dependency']
+    rules = ['all-dependency']
+}
+
+tasks.withType(JavaCompile) {
+    options.deprecation = true
 }
