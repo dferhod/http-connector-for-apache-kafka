@@ -7,5 +7,17 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.kafka:kafka-clients:3.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.avro:avro:1.11.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.testcontainers:junit-jupiter:1.17.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.testcontainers:testcontainers:1.17.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.testcontainers:kafka:1.17.6" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.assertj:assertj-core:3.24.2" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.awaitility:awaitility:4.2.0" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.apache.kafka:connect-runtime:3.2.1" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: org.slf4j:slf4j-api:1.7.36" level="project" />
+    <orderEntry type="library" scope="TEST" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.14.2" level="project" />
+    <orderEntry type="module" module-name="http-connector-for-apache-kafka.main" scope="TEST" />
   </component>
 </module>
